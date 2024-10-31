@@ -1,0 +1,212 @@
+@scalewidth: 10px;
+
+.wrapper {
+  position: relative;
+}
+
+.rectWrapper {
+  position: absolute;
+}
+
+.rect {
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.leftTop {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  cursor: nwse-resize;
+}
+
+.leftBottom {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 0;
+  cursor: nesw-resize;
+}
+.rightTop {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  cursor: nesw-resize;
+}
+
+.rightBottom {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(50%, 50%);
+  bottom: 0;
+  right: 0;
+  cursor: nwse-resize;
+}
+
+.leftCenter {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 0;
+  cursor: ew-resize;
+}
+.rightCenter {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 0;
+  cursor: ew-resize;
+}
+.topCenter {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 50%;
+  cursor: ns-resize;
+}
+.bottomCenter {
+  width: @scalewidth;
+  height: @scalewidth;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  left: 50%;
+  cursor: ns-resize;
+}
+.grayWrapper {
+  position: relative;
+  user-select: none;
+}
+
+.gray {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.topLayer {
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup {
+  display: block;
+}
+
+.popdown {
+  display: none;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.stepItem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  z-index: 200;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  z-index: 200;
+}
+
+.bottomZone {
+  position: absolute;
+  bottom: 24px;
+  z-index: 200;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  user-select: none;
+}
+
+.actionZone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
